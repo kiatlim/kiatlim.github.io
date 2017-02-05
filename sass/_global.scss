@@ -10,13 +10,22 @@ body {
 p {
   line-height: 150%;
   margin: 0 0 1rem 0;
-  font-size: 1rem;
+  font-size: 1.125rem;
+  @include breakpoint($sm) {
+    font-size: 1rem;
+  }
 }
 
 a {
-  color: $purple;
+  color: #421ede;
+  text-decoration: none;
+  @include breakpoint($sm) {
+    color: $purple;
+    text-decoration: underline;
+  }
   &:hover {
     color: #421ede;
+    text-decoration: none;
   }
 }
 
@@ -171,6 +180,7 @@ nav {
     }
     li {
       margin-bottom: 0.5rem;
+      line-height: 150%;
     }
   }
 }
