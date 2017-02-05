@@ -1,0 +1,14 @@
+$xm: 600px;
+$sm: 768px;
+$md: 980px;
+$lg: 1200px;
+
+$purple: #261d7a;
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

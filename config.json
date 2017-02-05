@@ -1,0 +1,36 @@
+{
+  "name": "kiat.sg",
+  "description": "Kiat's website",
+  "browserSyncProxy" : "http://kiat.dev",
+  "bowerDir": "assets/vendor",
+  "css": {
+    "file" : "styles.scss",
+    "src": [
+      "./sass/**/*.scss",
+      "sass/*.scss"
+    ],
+    "dest": "assets/css",
+    "includePaths": [
+      "./vendor/font-awesome/scss"
+    ]
+  },
+  "js": {
+    "file" : "script.js",
+    "src": [
+      "./js/**/*.js"
+    ],
+    "dest": "./js"
+  },
+  "images": {
+    "src": [
+      "./images/**/*"
+    ],
+    "dest": "./images/"
+  },
+  "fonts": {  
+    "src": [
+      "./vendor/font-awesome/fonts/**.*"
+    ],
+    "dest": "./fonts/"
+  }
+}

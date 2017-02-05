@@ -1,0 +1,28 @@
+{
+  "name": "cv.kiat.sg",
+  "authors": [
+    "Kiat Lim <me@kiat.sg>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "^4.7.0",
+    "breakpoint-sass": "^2.7.0",
+    "jquery": "^3.1.1",
+    "normalize-strings": "normalize#^1.1.0"
+  },
+  "devDependencies": {
+    "susy": "^2.2.12"
+  }
+}
