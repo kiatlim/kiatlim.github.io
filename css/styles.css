@@ -2476,9 +2476,6 @@ nav {
     width: 20px;
     text-align: center; }
 
-.content {
-  clear: both; }
-
 @media (min-width: 768px) {
   #content {
     float: left;
@@ -2488,6 +2485,8 @@ nav {
 #content section {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem; }
+  #content section:last-child {
+    border-bottom: 0; }
   #content section h3 {
     margin: 0 0 0.5rem;
     padding: 0; }
@@ -2506,6 +2505,8 @@ nav {
     font-weight: 300;
     font-size: 0.875rem;
     margin: 0 0 0.5rem; }
+  #content section li {
+    margin-bottom: 0.5rem; }
 
 footer {
   margin: 0 0 2rem; }
