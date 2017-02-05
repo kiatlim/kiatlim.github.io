@@ -2336,12 +2336,18 @@ body {
   color: #333;
   font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
   font-weight: 300; }
+  @media print {
+    body {
+      background: #fff; } }
 
 p {
   line-height: 150%;
   margin: 0 0 1rem 0;
   font-size: 1.125rem; }
   @media (min-width: 768px) {
+    p {
+      font-size: 1rem; } }
+  @media print {
     p {
       font-size: 1rem; } }
 
@@ -2458,6 +2464,13 @@ nav {
       position: fixed;
       float: left;
       margin-right: 2rem; } }
+  @media print {
+    .branding {
+      background: url("../images/kiatlim-square.jpg") no-repeat center center;
+      background-size: 100%;
+      width: 150px;
+      height: 150px;
+      float: right; } }
   .branding h1 {
     background: rgba(0, 0, 0, 0.8);
     font-size: 4rem;
@@ -2469,6 +2482,12 @@ nav {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0); }
+
+.section-summary h1:before {
+  content: "Hello, I'm "; }
+  @media print {
+    .section-summary h1:before {
+      content: "CV of "; } }
 
 .links {
   margin: 0 0 2rem;
