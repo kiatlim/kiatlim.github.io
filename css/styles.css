@@ -2324,7 +2324,7 @@
   overflow: visible;
   clip: auto; }
 
-nav:after {
+nav:after, #content section .row:after {
   content: "";
   display: table;
   clear: both; }
@@ -2512,22 +2512,63 @@ nav {
     margin-top: 1.5rem; } }
 #content section {
   border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
   #content section:last-child {
     border-bottom: 0; }
   #content section h3 {
     margin: 0 0 0.5rem;
     padding: 0; }
   #content section .row {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border-bottom: 1px dotted #ccc; }
     #content section .row:last-child {
       border-bottom: 0; }
   #content section .logo {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    display: none; }
+    @media (min-width: 600px) {
+      #content section .logo {
+        display: inline-block;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 31.62393%;
+        float: left;
+        margin-right: 2.5641%; } }
+    @media (min-width: 768px) {
+      #content section .logo {
+        display: none; } }
+    @media (min-width: 980px) {
+      #content section .logo {
+        display: inline-block; } }
     #content section .logo img {
       width: 100%;
       height: inherit; }
+  @media (min-width: 600px) {
+    #content section .group-right {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 65.81197%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 768px) {
+    #content section .group-right {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 980px) {
+    #content section .group-right {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 65.81197%;
+      float: right;
+      margin-right: 0; } }
   #content section .period {
     color: #666;
     font-weight: 300;
