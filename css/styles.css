@@ -2483,12 +2483,6 @@ nav {
     left: 50%;
     transform: translate(-50%, 0); }
 
-.section-summary h1:before {
-  content: "Hello, I'm "; }
-  @media print {
-    .section-summary h1:before {
-      content: "CV of "; } }
-
 .links {
   margin: 0 0 2rem;
   padding: 0;
@@ -2577,6 +2571,14 @@ nav {
   #content section li {
     margin-bottom: 0.5rem;
     line-height: 150%; }
+
+.section-summary h1:before {
+  content: "Hello, I'm "; }
+  @media print {
+    .section-summary h1:before {
+      content: "CV of "; } }
+.section-summary h3 {
+  line-height: 150%; }
 
 footer {
   margin: 0 0 2rem; }

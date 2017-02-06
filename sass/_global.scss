@@ -134,17 +134,6 @@ nav {
   }
 }
 
-.section-summary {
-  h1 {
-    &:before {
-      content: "Hello, I'm ";
-      @media print {
-        content: "CV of ";
-      }
-    }
-  }
-}
-
 .links {
   margin: 0 0 2rem;
   padding: 0;
@@ -232,6 +221,20 @@ nav {
       margin-bottom: 0.5rem;
       line-height: 150%;
     }
+  }
+}
+
+.section-summary {
+  h1 {
+    &:before {
+      content: "Hello, I'm ";
+      @media print {
+        content: "CV of ";
+      }
+    }
+  }
+  h3 {
+    line-height: 150%;
   }
 }
 
