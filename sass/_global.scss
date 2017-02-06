@@ -13,7 +13,7 @@ body {
 p {
   line-height: 150%;
   margin: 0 0 1rem 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
   @include breakpoint($sm) {
     font-size: 1rem;
   }
@@ -106,7 +106,7 @@ nav {
 
   @include breakpoint($sm) {
     height: 100vh;
-    width: 50vw;
+    width: 40vw;
     position: fixed;
     float: left;
     margin-right: 2rem;
@@ -158,7 +158,7 @@ nav {
   @include breakpoint($sm) {
     float: left;
     width: 45%;
-    margin-left: 52%;
+    margin-left: 43%;
     margin-top: 1.5rem;
   }
   section {
@@ -173,12 +173,14 @@ nav {
       padding: 0;
     }
     .row {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px dotted #ccc;
       @extend %clearfix;
 
       &:last-child {
         border-bottom: 0;
+        margin: 0;
       }
     }
     .logo {
@@ -186,14 +188,13 @@ nav {
       display: none;
 
       @include breakpoint($xm) {
-        display: inline-block;
-        @include span(4 of 12);
+        display: none;
       }
       @include breakpoint($sm) {
         display: none;
       }
       @include breakpoint($md) {
-        display: inline-block;
+        display: none;
       }
       img {
         width: 100%;
@@ -202,13 +203,13 @@ nav {
     }
     .group-right {
       @include breakpoint($xm) {
-        @include span(8 of 12 last);
+        @include span(12 of 12);
       }
       @include breakpoint($sm) {
         @include span(12 of 12);
       }
       @include breakpoint($md) {
-        @include span(8 of 12 last);
+        @include span(12 of 12);
       }
     }
     .period {
@@ -225,14 +226,14 @@ nav {
 }
 
 .section-summary {
-  h1 {
-    &:before {
-      content: "Hello, I'm ";
-      @media print {
-        content: "CV of ";
-      }
-    }
-  }
+  // h1 {
+  //   &:before {
+  //     content: "Hello, I'm ";
+  //     @media print {
+  //       content: "CV of ";
+  //     }
+  //   }
+  // }
   h3 {
     line-height: 150%;
   }

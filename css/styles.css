@@ -2343,7 +2343,7 @@ body {
 p {
   line-height: 150%;
   margin: 0 0 1rem 0;
-  font-size: 1.125rem; }
+  font-size: 1rem; }
   @media (min-width: 768px) {
     p {
       font-size: 1rem; } }
@@ -2460,7 +2460,7 @@ nav {
   @media (min-width: 768px) {
     .branding {
       height: 100vh;
-      width: 50vw;
+      width: 40vw;
       position: fixed;
       float: left;
       margin-right: 2rem; } }
@@ -2502,7 +2502,7 @@ nav {
   #content {
     float: left;
     width: 45%;
-    margin-left: 52%;
+    margin-left: 43%;
     margin-top: 1.5rem; } }
 #content section {
   border-bottom: 1px solid #ccc;
@@ -2513,28 +2513,24 @@ nav {
     margin: 0 0 0.5rem;
     padding: 0; }
   #content section .row {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px dotted #ccc; }
     #content section .row:last-child {
-      border-bottom: 0; }
+      border-bottom: 0;
+      margin: 0; }
   #content section .logo {
     margin-bottom: 0.5rem;
     display: none; }
     @media (min-width: 600px) {
       #content section .logo {
-        display: inline-block;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 31.62393%;
-        float: left;
-        margin-right: 2.5641%; } }
+        display: none; } }
     @media (min-width: 768px) {
       #content section .logo {
         display: none; } }
     @media (min-width: 980px) {
       #content section .logo {
-        display: inline-block; } }
+        display: none; } }
     #content section .logo img {
       width: 100%;
       height: inherit; }
@@ -2543,8 +2539,9 @@ nav {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      width: 65.81197%;
-      float: right;
+      width: 100%;
+      float: left;
+      margin-left: 0;
       margin-right: 0; } }
   @media (min-width: 768px) {
     #content section .group-right {
@@ -2560,8 +2557,9 @@ nav {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      width: 65.81197%;
-      float: right;
+      width: 100%;
+      float: left;
+      margin-left: 0;
       margin-right: 0; } }
   #content section .period {
     color: #666;
@@ -2572,11 +2570,6 @@ nav {
     margin-bottom: 0.5rem;
     line-height: 150%; }
 
-.section-summary h1:before {
-  content: "Hello, I'm "; }
-  @media print {
-    .section-summary h1:before {
-      content: "CV of "; } }
 .section-summary h3 {
   line-height: 150%; }
 
