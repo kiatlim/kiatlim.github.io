@@ -56,6 +56,10 @@ h3 {
   font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
 }
 
+.page {
+  overflow: hidden;
+}
+
 .container {
   @include container(90%);
   @include breakpoint($sm) {
@@ -70,31 +74,6 @@ h3 {
   }
 }
 
-nav {
-  padding: 0.5rem 0;
-  @extend %clearfix;
-  ul {
-    margin: 0;
-    padding: 0;
-    @include breakpoint($sm) {
-      text-align: center;
-    }
-  }
-  li {
-    list-style: none;
-    padding: 0 0 0.5rem;
-    margin: 0 1rem 0.5rem 0;
-    margin-right: 1rem;
-    border-bottom: 1px solid #ccc;
-    @include breakpoint($sm) {
-      float: left;
-      border-bottom: 0;
-      border-right: 1px solid #ccc;
-      padding: 0 20px 0 0;
-      text-align: center;
-    }
-  }
-}
 header {
   background: #fff;
   position: fixed;
@@ -103,9 +82,20 @@ header {
   width: 100%;
   height: 40px;
   border-bottom: 1px solid #ccc;
-  img {
+  .logo {
     float: left;
     margin: 8px 20px 5px 10px;
+    background: url('../images/kiat-logo.png') no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: url('../images/kiat-logo@2x.png') no-repeat;
+      background-size: 100%;
+    }
+    a {
+      display: block;
+      width: 25px;
+      height: 24px;
+      text-indent: -9999px;
+    }
   }
   ul {
     float: left;
@@ -138,8 +128,8 @@ header {
   overflow: hidden;
   background: url('../images/kiatlim-portrait.jpg') no-repeat center top;
   background-size: cover;
-  height: 500px;
-  margin-bottom: 1.5rem;
+  height: 510px;
+  margin: 40px 0 1.5rem;
 
   @include breakpoint($sm) {
     height: 100vh;
