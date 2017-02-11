@@ -23,14 +23,15 @@ p {
 }
 
 a {
-  color: #421ede;
+  color: $blue;
   text-decoration: none;
+  transition: color 0.5s ease;
   @include breakpoint($sm) {
     color: $purple;
     text-decoration: underline;
   }
   &:hover {
-    color: #421ede;
+    color: $blue;
     text-decoration: none;
   }
 }

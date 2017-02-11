@@ -2352,14 +2352,15 @@ p {
       font-size: 1rem; } }
 
 a {
-  color: #421ede;
-  text-decoration: none; }
+  color: #1E8DDE;
+  text-decoration: none;
+  transition: color 0.5s ease; }
   @media (min-width: 768px) {
     a {
       color: #261d7a;
       text-decoration: underline; } }
   a:hover {
-    color: #421ede;
+    color: #1E8DDE;
     text-decoration: none; }
 
 h1 {
