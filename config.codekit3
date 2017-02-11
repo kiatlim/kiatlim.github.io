@@ -38,7 +38,7 @@
 		"oS": 1
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -96,6 +96,14 @@
 		"oA": 2,
 		"oAP": "\/images\/favicon.ico",
 		"oF": 0
+		},
+	"\/images\/kiat-logo.png": {
+		"ft": 32768,
+		"iS": 768,
+		"oA": 0,
+		"oAP": "\/images\/kiat-logo.png",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/images\/kiatlim-portrait.jpg": {
 		"ft": 16384,
