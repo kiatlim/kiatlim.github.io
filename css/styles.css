@@ -2333,9 +2333,8 @@ body {
   margin: 0;
   padding: 0;
   background: #ededed;
-  color: #333;
-  font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
+  color: #222;
+  font-family: Helvetica, Arial, sans-serif; }
   @media print {
     body {
       background: #fff; } }
@@ -2363,8 +2362,10 @@ a {
     color: #1E8DDE;
     text-decoration: none; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial,sans-serif; }
+
 h1 {
-  font-family: "museo-sans-rounded", Helvetica, Arial,sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   margin: 0 0 1rem;
@@ -2372,13 +2373,9 @@ h1 {
 
 h2 {
   font-weight: 300;
-  font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif;
   color: #261d7a;
   font-size: 2rem;
   margin: 0 0 0.875rem; }
-
-h3 {
-  font-family: "museo-sans-rounded", Helvetica, Arial, sans-serif; }
 
 .page {
   overflow: hidden; }
@@ -2432,25 +2429,18 @@ h3 {
         clear: both; } }
 
 header {
-  background: #fff;
   position: fixed;
   opacity: 0.9;
-  z-index: 999;
-  width: 100%;
-  height: 40px;
-  border-bottom: 1px solid #ccc; }
+  z-index: 999; }
   header .logo {
     float: left;
-    margin: 8px 20px 5px 10px;
-    background: url("../images/kiat-logo.png") no-repeat; }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      header .logo {
-        background: url("../images/kiat-logo@2x.png") no-repeat;
-        background-size: 100%; } }
+    margin: 2rem 0 0 2rem;
+    background: url("../images/kiat-logo.svg") no-repeat;
+    background-size: 100%; }
     header .logo a {
       display: block;
-      width: 25px;
-      height: 24px;
+      width: 35px;
+      height: 35px;
       text-indent: -9999px; }
   header ul {
     float: left;
@@ -2477,7 +2467,7 @@ header {
   background: url("../images/kiatlim-portrait.jpg") no-repeat center top;
   background-size: cover;
   height: 510px;
-  margin: 40px 0 1.5rem; }
+  margin: 0 0 1.5rem; }
   @media (min-width: 768px) {
     .branding {
       height: 100vh;
@@ -2524,18 +2514,19 @@ header {
     float: left;
     width: 45%;
     margin-left: 43%;
-    margin-top: 4rem; } }
+    margin-top: 2rem; } }
 #content section {
   border-bottom: 1px solid #ccc;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2rem;
+  padding-bottom: 1rem; }
   #content section:last-child {
     border-bottom: 0; }
   #content section h3 {
     margin: 0 0 0.5rem;
     padding: 0; }
   #content section .row {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
     border-bottom: 1px dotted #ccc; }
     #content section .row:last-child {
       border-bottom: 0;
@@ -2583,13 +2574,12 @@ header {
       margin-left: 0;
       margin-right: 0; } }
   #content section .period {
-    color: #666;
-    font-weight: 300;
+    color: #444;
     font-size: 0.875rem;
     margin: 0 0 0.5rem; }
   #content section li {
-    margin-bottom: 0.5rem;
-    line-height: 150%; }
+    line-height: 120%;
+    margin-bottom: 0.5rem; }
 
 .section-summary h3 {
   line-height: 150%; }
@@ -2597,7 +2587,7 @@ header {
 footer {
   margin: 0 0 2rem; }
   footer p {
-    font-size: 0.875rem; }
+    font-size: 0.7rem; }
   footer ul {
     padding: 0;
     margin: 0; }
