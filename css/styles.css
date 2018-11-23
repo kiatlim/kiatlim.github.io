@@ -2337,16 +2337,14 @@ body {
   font-family: Helvetica, Arial, sans-serif; }
   @media print {
     body {
-      background: #fff; } }
+      background: #fff;
+      font-size: 12px; } }
 
 p {
   line-height: 150%;
   margin: 0 0 1rem 0;
   font-size: 1rem; }
   @media (min-width: 768px) {
-    p {
-      font-size: 1rem; } }
-  @media print {
     p {
       font-size: 1rem; } }
 
@@ -2432,6 +2430,9 @@ header {
   position: fixed;
   opacity: 0.9;
   z-index: 999; }
+  @media print {
+    header {
+      display: none; } }
   header .logo {
     float: left;
     margin: 2rem 0 0 2rem;
@@ -2481,7 +2482,9 @@ header {
       background-size: 100%;
       width: 150px;
       height: 150px;
-      float: right; } }
+      float: right;
+      border-radius: 100px;
+      margin: 0 1rem 1rem 0; } }
   .branding h1 {
     background: rgba(0, 0, 0, 0.8);
     font-size: 4rem;
@@ -2515,6 +2518,10 @@ header {
     width: 45%;
     margin-left: 43%;
     margin-top: 2rem; } }
+  @media print and (min-width: 768px) {
+    #content {
+      margin: 0; } }
+
 #content section {
   border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
@@ -2581,6 +2588,9 @@ header {
     line-height: 120%;
     margin-bottom: 0.5rem; }
 
+@media print {
+  .section-summary {
+    page-break-after: always; } }
 .section-summary h3 {
   line-height: 150%; }
 
@@ -2594,3 +2604,6 @@ footer {
     footer ul li {
       list-style: none;
       display: inline-block; }
+  @media print {
+    footer {
+      display: none; } }

@@ -6,6 +6,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   @media print {
     background: #fff;
+    font-size: 12px;
   }
 }
 
@@ -14,9 +15,6 @@ p {
   margin: 0 0 1rem 0;
   font-size: 1rem;
   @include breakpoint($sm) {
-    font-size: 1rem;
-  }
-  @media print {
     font-size: 1rem;
   }
 }
@@ -76,6 +74,9 @@ header {
   position: fixed;
   opacity: 0.9;
   z-index: 999;
+  @media print {
+    display: none;
+  }
   .logo {
     float: left;
     margin: 2rem 0 0 2rem;
@@ -136,6 +137,8 @@ header {
     width: 150px;
     height: 150px;
     float: right;
+    border-radius: 100px;
+    margin: 0 1rem 1rem 0;
   }
 
   h1 {
@@ -178,6 +181,9 @@ header {
     width: 45%;
     margin-left: 43%;
     margin-top: 2rem;
+    @media print {
+      margin: 0;
+    }
   }
   section {
     border-bottom: 1px solid #ccc;
@@ -252,6 +258,9 @@ header {
   //     }
   //   }
   // }
+  @media print {
+      page-break-after: always;
+    }
   h3 {
     line-height: 150%;
   }
@@ -269,5 +278,8 @@ footer {
       list-style: none;
       display: inline-block;
     }
+  }
+  @media print {
+    display: none;
   }
 }
