@@ -2324,7 +2324,7 @@
   overflow: visible;
   clip: auto; }
 
-#content section .row:after {
+#content section .row:after, .section-summary .summary-header:after {
   content: "";
   display: table;
   clear: both; }
@@ -2357,7 +2357,8 @@ p {
       font-size: 0.91rem; } }
 
 ul, li {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 140%; }
   @media print {
     ul, li {
       font-size: 0.91rem; } }
@@ -2394,9 +2395,12 @@ h2 {
 
 h3 {
   font-size: 1.3125rem; }
-  @media print {
-    h3 {
-      font-size: 1.2rem; } }
+
+.content-hidden {
+  display: none; }
+
+.page-break {
+  page-break-after: always; }
 
 .page {
   overflow: hidden; }
@@ -2524,15 +2528,7 @@ nav ul {
       margin-right: 2rem; } }
   @media print {
     .branding {
-      background: url("../images/kiatlim-square.jpg") no-repeat center center;
-      background-size: 100%;
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      border-radius: 100px;
-      margin: 0 1rem 1rem 0; } }
+      display: none; } }
 
 .links {
   margin: 0 0 2rem;
@@ -2622,9 +2618,27 @@ nav ul {
     font-size: 0.875rem;
     margin: 0 0 0.5rem; }
   #content section li {
-    line-height: 120%;
     margin-bottom: 0.5rem; }
 
+.section-summary .summary-header .summary-title {
+  float: left; }
+  @media print {
+    .section-summary .summary-header .summary-title {
+      width: 70%; } }
+.section-summary .summary-header .photo {
+  background: url("../images/kiatlim-square.jpg") no-repeat center center;
+  background-size: 100%;
+  width: 150px;
+  height: 150px;
+  float: right;
+  border-radius: 100px;
+  margin: 0 1rem 1rem 0;
+  display: none; }
+  @media print {
+    .section-summary .summary-header .photo {
+      display: block; } }
+.section-summary p {
+  clear: both; }
 @media print {
   .section-summary h1 {
     font-size: 3.5rem; } }
@@ -2638,20 +2652,24 @@ nav ul {
   clear: both; }
 .section-summary .section-contact {
   display: none; }
+  .section-summary .section-contact li {
+    float: left; }
   @media print {
     .section-summary .section-contact {
       display: block; } }
 
-.section-contact ul {
-  margin: 0; }
-.section-contact li {
-  float: left;
-  border: 0;
-  margin-right: 1rem;
-  border: 0; }
-  @media (min-width: 768px) {
-    .section-contact li {
-      float: none; } }
+.section-contact {
+  border-bottom: none !important; }
+  .section-contact ul {
+    margin: 0; }
+  .section-contact li {
+    float: left;
+    border: 0;
+    margin-right: 1rem;
+    border: 0; }
+    @media (min-width: 768px) {
+      .section-contact li {
+        float: none; } }
 
 footer {
   margin: 0 0 2rem; }

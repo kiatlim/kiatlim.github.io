@@ -29,6 +29,7 @@ p {
 
 ul, li {
   font-size: 1rem;
+  line-height: 140%;
   @media print {
     font-size: 0.91rem;
   }
@@ -72,8 +73,16 @@ h2 {
 h3 {
   font-size: 1.3125rem;
   @media print {
-    font-size: 1.2rem;
   }
+}
+
+
+.content-hidden {
+  display: none;
+}
+
+.page-break {
+  page-break-after: always;
 }
 
 .page {
@@ -182,15 +191,7 @@ nav {
   }
 
   @media print {
-    background: url('../images/kiatlim-square.jpg') no-repeat center center;
-    background-size: 100%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius: 100px;
-    margin: 0 1rem 1rem 0;
+    display: none;
   }
 }
 
@@ -282,13 +283,38 @@ nav {
       margin: 0 0 0.5rem;
     }
     li {
-      line-height: 120%;
       margin-bottom: 0.5rem;
     }
   }
 }
 
 .section-summary {
+  .summary-header {
+    @extend %clearfix;
+    .summary-title {
+      float: left;
+      @media print {
+        width: 70%;
+      }
+    }
+    .photo {
+      background: url('../images/kiatlim-square.jpg') no-repeat center center;
+      background-size: 100%;
+      width: 150px;
+      height: 150px;
+      float: right;
+      border-radius: 100px;
+      margin: 0 1rem 1rem 0;
+      display: none;
+      @media print {
+        display: block;
+      }
+    }
+  }
+  p {
+    clear: both;
+  }
+
   h1 {
     @media print {
       font-size: 3.5rem;
@@ -306,6 +332,9 @@ nav {
   }
   .section-contact {
     display: none;
+    li {
+      float: left;
+    }
     @media print {
       display: block;
     }
@@ -313,6 +342,7 @@ nav {
 }
 
 .section-contact {
+  border-bottom: none !important;
   ul {
     margin: 0;
   }
